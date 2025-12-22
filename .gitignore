@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# API keys and secrets
+datadog.yaml
+*.env
+
+# OS files
+.DS_Store

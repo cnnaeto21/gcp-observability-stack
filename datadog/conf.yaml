@@ -1,0 +1,6 @@
+logs:
+  - type: file
+    path: /var/log/flask-app.log
+    service: flask-api
+    source: python
+    sourcecategory: sourcecode

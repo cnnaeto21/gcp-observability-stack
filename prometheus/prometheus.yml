@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 15s  # Collect metrics every 15 seconds
+  evaluation_interval: 15s  # Evaluate alerting rules every 15 seconds
+
+rule_files:
+  - "alert_rules.yml"
+
+# Where to scrape metrics from
+scrape_configs:
+  # Monitor Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Monitor your Flask app
+  - job_name: 'flask-app'
+    static_configs:
+      - targets: ['localhost:8080']
+    metrics_path: '/metrics'  # Where Flask will expose metrics
