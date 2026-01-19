@@ -1,0 +1,8 @@
+Flask==3.0.0
+prometheus-client==0.19.0
+ddtrace==2.3.0
+datadog==0.48.0
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.23
+locust==2.20.0
+google-cloud-logging==3.8.0
