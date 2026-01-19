@@ -254,19 +254,19 @@ gunicorn --bind 0.0.0.0:8080 --workers 5 app:app
 ## 📸 Screenshots
 
 ### Datadog Distributed Tracing
-![Datadog APM showing database query breakdown](screenshots/datadog-apm-trace.png)
+![Datadog APM showing database query breakdown](screenshots/ObservabilityScreenShots/analytics_endpoint.png)
 *Full request trace showing Flask → PostgreSQL. Total time 1.53s, database queries only 16.9ms - most time spent in application logic.*
 
 ### Grafana Dashboard
-![Grafana P95 latency dashboard](screenshots/grafana-dashboard.png)
-*Custom dashboard with dynamic endpoint variables showing request rate, P95 latency, and error rates.*
+![Grafana P99 latency dashboard](screenshots/ObservabilityScreenShots/Grafana_Dash_Latency.png)
+*Custom dashboard with dynamic endpoint variables showing request rate, P99 latency, and error rates.*
 
 ### Load Testing Results
-![Locust showing OOM failure at 100 users](screenshots/locust-results.png)
+![Locust showing OOM failure at 100 users](screenshots/ObservabilityScreenShots/100-user-segkill-locust.png)
 *Load test demonstrating e2-micro limits: 100 concurrent users caused out-of-memory failure.*
 
 ### GCP Costs
-![GCP billing showing $0.64 total](screenshots/gcp-billing.png)
+![GCP billing showing $0.64 total](screenshots/ObservabilityScreenShots/GCP_cost_breakdown.png)
 *Actual costs for 7-day project: $0.64 total, mostly Cloud SQL ($0.54). Compute Engine covered by free tier.*
 
 ---
